@@ -1,2 +1,2 @@
-# Practice_Finnish_Numbers
-Practice Finnish Numbers from 0 to 100.
+# Practice Finnish Numbers
+Practice Finnish numbers from 0 to 100.
