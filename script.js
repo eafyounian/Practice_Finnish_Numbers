@@ -31,17 +31,17 @@ function generateGrid() {
     const min = parseInt(document.getElementById('min').value);
     const max = parseInt(document.getElementById('max').value);
 
-    if (min < 1 || max > 100 || min >= max) {
-        alert('Please enter a valid range between 1 and 100.');
+    if (min < 0 || max > 100 || min >= max) {
+        alert('Please enter a valid range between 0 and 100.');
         return;
     }
 
     const numbers = [];
+    const rangeSize = max - min + 1;
+
     while (numbers.length < 9) {
-        const num = Math.floor(Math.random() * (max - min + 1)) + min;
-        if (!numbers.includes(num)) {
-            numbers.push(num);
-        }
+        const num = Math.floor(Math.random() * rangeSize) + min;
+        numbers.push(num);
     }
 
     const grid = document.getElementById('grid');
