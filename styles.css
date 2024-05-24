@@ -35,11 +35,21 @@ body {
     animation: shake 0.5s;
 }
 
-#selected-number {
+/* #selected-number {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
+} */
+
+#selected-number {
+    font-size: calc(2vw + 2vh + 1vmin); /* Responsive font size */
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    text-align: center; /* Center the text */
+    padding: 0.5em; /* Optional: add some padding for better appearance */
+    overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
 }
+
+
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
