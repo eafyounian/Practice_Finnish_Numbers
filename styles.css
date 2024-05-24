@@ -43,7 +43,8 @@ body {
 
 #selected-number {
     /* font-size: calc(2vw + 2vh + 1vmin); Responsive font size */
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     word-wrap: break-word; /* Ensure long words break and wrap to the next line */
     text-align: center; /* Center the text */
     padding: 1em 1em; /* Optional: add some padding for better appearance */
